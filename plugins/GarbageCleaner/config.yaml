@@ -9,8 +9,6 @@ callbacks:
             my $fmgr = MT::FileMgr->new( 'Local' )
                 or die MT::FileMgr->errstr;
             my $path = $obj->file_path;
-            if ( $fmgr->exists( $path ) ) {
-                $fmgr->delete( $path )
-                    or die MT::FileMgr->errstr;
-            }
+            $fmgr->delete( $path )
+                or die MT::FileMgr->errstr;
         }
