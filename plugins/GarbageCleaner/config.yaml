@@ -1,6 +1,6 @@
 name: Garbage Cleaner
 id:   GarbageCleaner
-version: 0.1
+version: 1.0
 callbacks:
     MT::FileInfo::post_remove: |
         sub {
